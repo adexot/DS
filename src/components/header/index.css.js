@@ -3,6 +3,12 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   text-align: center;
+
+  p {
+    color: #ccc;
+    margin-top: 20px;
+    font-size: 20px;
+  }
 `;
 
 export const SmallHeader = styled.h2`
@@ -10,7 +16,7 @@ export const SmallHeader = styled.h2`
 `;
 
 export const LargeHeader = styled.h4`
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 600;
   margin-top: 40px;
 `;
