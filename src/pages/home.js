@@ -6,7 +6,7 @@ import {
   ServiceList,
   ServiceItem,
   ApproachItem,
-} from './index.css';
+} from '../index.css';
 import ArrowDown from 'images/svg/arrow-circle.svg';
 import Strategic from 'images/svg/strategic.svg';
 import Cloud from 'images/svg/cloud.svg';
