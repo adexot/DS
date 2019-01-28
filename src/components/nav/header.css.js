@@ -4,7 +4,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
+  padding: 2rem 4rem;
 
   a {
     color: #757575;
@@ -14,5 +14,14 @@ export const Container = styled.header`
     &:hover {
       color: inherit;
     }
+  }
+`;
+
+export const Title = styled.div`
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
   }
 `;

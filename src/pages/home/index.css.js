@@ -8,7 +8,17 @@ export const Section = styled.section`
 
 export const TopSection = styled(Section)`
   height: 80vh;
-  width: 100vw;
+  background: linear-gradient(
+    176.34deg,
+    #e1faff 70.26%,
+    rgba(225, 250, 255, 0) 91.26%
+  );
+  div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const ServiceList = styled.ul`

@@ -2,12 +2,24 @@ import styled from 'styled-components';
 // import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.header`
-  text-align: center;
+  text-align: ${props => props.align || 'center'};
 
   p {
-    color: #ccc;
+    color: #aaa;
     margin-top: 20px;
     font-size: 20px;
+    max-width: 500px;
+  }
+
+  a {
+    background-color: #000428;
+    padding: 20px 50px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
   }
 `;
 

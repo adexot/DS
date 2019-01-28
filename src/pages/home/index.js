@@ -17,6 +17,7 @@ import Icon1 from 'images/svg/icon-1.svg';
 import Icon2 from 'images/svg/icon-2.svg';
 import Icon3 from 'images/svg/icon-3.svg';
 import Icon4 from 'images/svg/icon-4.svg';
+import TopImage from 'images/svg/top.svg';
 
 const services = [
   {
@@ -83,10 +84,18 @@ const approaches = [
 const Home = () => (
   <Fragment>
     <TopSection>
-      <Header
-        subHeading="Differential Solutions"
-        description="We make your Innovations go Live"
-      />
+      <div>
+        <Header
+          align="left"
+          subHeading="Differential Solutions"
+          description="We make alot of difference in the way solve problems, giving you the best solution you can get."
+          button={{
+            text: 'Contact Us',
+            href: '/contact-us',
+          }}
+        />
+        <TopImage />
+      </div>
     </TopSection>
     <Section>
       <Header heading="SERVICES" subHeading=" Core Project Competencies " />
