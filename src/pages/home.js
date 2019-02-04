@@ -92,7 +92,7 @@ const Home = () => (
           description="We make alot of difference in the way solve problems, giving you the best solution you can get."
           button={{
             text: 'Get Started',
-            href: '/contact-us',
+            href: '/projects',
           }}
         />
         <TopImage />
@@ -159,7 +159,7 @@ const Home = () => (
     <Section bgColor="#f5f9fa">
       <div className="contact-us-intro">
         <span>Have an idea to bring to life?</span>
-        <Button href="/about" text="Get Started" />
+        <Button href="/contact" text="Get Started" />
       </div>
     </Section>
   </Fragment>

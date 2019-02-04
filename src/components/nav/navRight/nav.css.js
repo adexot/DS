@@ -11,13 +11,13 @@ export const Container = styled.nav`
       font-size: 1.3rem;
 
       a {
-        padding: 5px 10px;
+        padding: 5px 30px;
       }
 
       &:last-child a {
         border: 1px solid #ccc;
         border-radius: 25px;
-        padding: 5px 15px;
+        padding: 5px 30px;
         transition: border-color 0.3s ease;
 
         &:hover {

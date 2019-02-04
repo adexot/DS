@@ -15,7 +15,7 @@ const NavRight = () => (
         <Link to="/company">Company</Link>
       </li>
       <li>
-        <Link to="/contact">Company</Link>
+        <Link to="/contact">Contact Us</Link>
       </li>
     </ul>
   </Container>
