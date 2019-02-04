@@ -47,4 +47,9 @@ export const Container = styled.footer`
       }
     }
   }
+
+  .footer-bottom {
+    font-size: 1.1rem;
+    padding-top: 20px;
+  }
 `;

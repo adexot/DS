@@ -5,7 +5,7 @@ import {
   TopSection,
   ServiceList,
   ServiceItem,
-  ApproachItem,
+  // ApproachItem,
 } from '../index.css';
 import ArrowDown from 'images/svg/arrow-circle.svg';
 import Strategic from 'images/svg/strategic.svg';
@@ -18,6 +18,7 @@ import Icon2 from 'images/svg/icon-2.svg';
 import Icon3 from 'images/svg/icon-3.svg';
 import Icon4 from 'images/svg/icon-4.svg';
 import TopImage from 'images/svg/top.svg';
+import Button from 'components/button';
 
 const services = [
   {
@@ -90,7 +91,7 @@ const Home = () => (
           subHeading="Differential Solutions"
           description="We make alot of difference in the way solve problems, giving you the best solution you can get."
           button={{
-            text: 'Contact Us',
+            text: 'Get Started',
             href: '/contact-us',
           }}
         />
@@ -98,7 +99,7 @@ const Home = () => (
       </div>
     </TopSection>
     <Section>
-      <Header heading="SERVICES" subHeading=" Core Project Competencies " />
+      <Header subHeading=" Core Project Competencies " />
       <ServiceList>
         {services.map((item, index) => {
           const TagName = item.logo;
@@ -112,7 +113,7 @@ const Home = () => (
         })}
       </ServiceList>
     </Section>
-    <Section bgColor="#f1f1f1">
+    {/* <Section bgColor="#f1f1f1">
       <Header heading="Explore" subHeading="Our Project Approach" />
       <ServiceList>
         {approaches.map((item, index) => {
@@ -128,6 +129,38 @@ const Home = () => (
           );
         })}
       </ServiceList>
+    </Section> */}
+    <Section bgColor="#fff">
+      {approaches.map((item, index) => {
+        const TagName = item.icon;
+        return (
+          <div key={index} className="flex-row">
+            <div className="flex-item-image">
+              <TagName />
+            </div>
+            <div className="flex-item-content">
+              <h3>{item.heading}</h3>
+              <p>
+                Adipisicing qui ea sit enim id mollit. Enim irure adipisicing
+                nulla nostrud tempor dolore nisi magna sunt adipisicing ipsum
+                excepteur. Mollit dolor reprehenderit exercitation amet proident
+                nostrud sunt do sunt ut. Amet deserunt sint adipisicing commodo
+                fugiat. Nostrud voluptate do mollit dolor veniam laborum
+                aliquip. Officia eiusmod magna occaecat cillum cupidatat cillum
+                commodo consectetur Lorem nisi mollit commodo deserunt culpa.
+                Eiusmod reprehenderit duis amet incididunt enim eiusmod veniam
+                commodo ad incididunt aliquip id irure.
+              </p>
+            </div>
+          </div>
+        );
+      })}
+    </Section>
+    <Section bgColor="#f5f9fa">
+      <div className="contact-us-intro">
+        <span>Have an idea to bring to life?</span>
+        <Button href="/about" text="Get Started" />
+      </div>
     </Section>
   </Fragment>
 );

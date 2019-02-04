@@ -6,19 +6,16 @@ const NavRight = () => (
   <Container>
     <ul>
       <li>
-        <Link to="/about">Projects</Link>
+        <Link to="/projects">Projects</Link>
       </li>
       <li>
-        <Link to="/about">Services</Link>
+        <Link to="/services">Services</Link>
       </li>
       <li>
-        <Link to="/about">Approach</Link>
+        <Link to="/company">Company</Link>
       </li>
       <li>
-        <Link to="/about">Company</Link>
-      </li>
-      <li>
-        <Link to="/about">Contact Us</Link>
+        <Link to="/contact">Company</Link>
       </li>
     </ul>
   </Container>
