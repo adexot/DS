@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Section = styled.section`
   background-color: ${props => props.bgColor || '#fff'};
   display: block;
   padding: 100px 0;
+
+  ${MEDIA.PHONE`
+      padding: 50px 0;
+    `};
 
   .flex-row {
     display: flex;
@@ -11,6 +16,11 @@ export const Section = styled.section`
     margin: 0 auto 50px;
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.32);
+
+    ${MEDIA.PHONE`
+      flex-direction: column;
+width: 100%;
+    `};
   }
 
   .flex-item-image {
@@ -24,6 +34,12 @@ export const Section = styled.section`
     svg {
       width: 70%;
     }
+
+    ${MEDIA.PHONE`
+      flex-direction: column;
+width: 100%;
+padding: 0;
+    `};
   }
 
   .flex-item-content {
@@ -39,6 +55,11 @@ export const Section = styled.section`
     p {
       width: 80%;
     }
+
+    ${MEDIA.PHONE`
+width: 100%;
+padding: 20px;
+    `};
   }
 
   .contact-us-intro {
@@ -67,11 +88,22 @@ export const TopSection = styled(Section)`
     #e1faff 70.26%,
     rgba(225, 250, 255, 0) 91.26%
   );
+  ${MEDIA.PHONE`
+      height: 100%;
+    `};
   div {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
+    ${MEDIA.PHONE`
+      flex-direction: column;
+
+      svg {
+      width: 300px;
+      }
+    `};
   }
 `;
 
@@ -79,11 +111,14 @@ export const ServiceList = styled.ul`
   display: flex;
   max-width: 1200px;
   margin: 100px auto;
+
+  ${MEDIA.PHONE`
+      flex-direction: column;
+    `};
 `;
 
 export const ListItem = styled.li`
   flex: 1 1 0;
-  width: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -92,6 +127,12 @@ export const ListItem = styled.li`
   text-align: center;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+
+  ${MEDIA.PHONE`
+      svg {
+        height: 100px;
+      }
+    `};
 `;
 
 export const ServiceItem = styled(ListItem)`

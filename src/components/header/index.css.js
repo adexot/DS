@@ -1,8 +1,12 @@
 import styled from 'styled-components';
-// import MEDIA from 'helpers/mediaTemplates';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.header`
   text-align: ${props => props.align || 'center'};
+
+  ${MEDIA.PHONE`
+text-align: center;
+    `};
 
   p {
     color: #aaa;
@@ -31,4 +35,8 @@ export const LargeHeader = styled.h4`
   font-size: 6rem;
   font-weight: 600;
   margin-top: 40px;
+
+  ${MEDIA.PHONE`
+      font-size: 4rem;
+    `};
 `;

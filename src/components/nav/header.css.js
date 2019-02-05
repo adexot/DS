@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.header`
   display: flex;
@@ -17,6 +18,10 @@ export const Container = styled.header`
       color: inherit;
     }
   }
+
+  ${MEDIA.PHONE`
+      padding: 10px 20px;
+    `};
 `;
 
 export const Title = styled.div`

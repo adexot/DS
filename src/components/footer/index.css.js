@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-// import MEDIA from 'helpers/mediaTemplates';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.footer`
   background: ${props =>
     props.bgColor || 'linear-gradient(to bottom, #000428, #000)'};
   color: #fff;
   padding: 100px 0;
+
+  ${MEDIA.PHONE`
+padding: 50px 20px;
+    `};
 
   & > div {
     display: flex;
@@ -14,9 +18,17 @@ export const Container = styled.footer`
     max-width: 1200px;
     margin: 0 auto;
 
+    ${MEDIA.PHONE`
+      flex-wrap: wrap;
+    `};
+
     div:first-child {
       width: 30%;
       padding-right: 50px;
+
+      ${MEDIA.PHONE`
+width: 100%;
+    `};
 
       h3 {
         font-size: 2rem;
